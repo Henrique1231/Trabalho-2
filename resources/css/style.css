@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+}
+
+h1 h2 h3 {
+    text-transform: uppercase;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(img/img-hero-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+header .logo {
+    width: 100px;
+    margin-left: 40px;
+    transform: border 0.8s;
+    border: solid 5px transparent;
+}
+
+header .logo:hover {
+    border: solid 5px red;
+}
+
+header .main-nav {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header .main-nav li a:hover,
+header .main-nav li a:active {
+    padding-bottom: 4px;
+    border-bottom: solid 2px blue;
+    transition: border-botton 0.4s;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+
+.btn:link,
+.btn:visited {
+    border: solid 2px blue;
+    border-radius: 10px;
+    padding: 5px 25px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: blue;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: rgb(46, 155, 251);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: blue;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: rgb(46, 155, 251);
+    color: white;
+}
+
+.section-features {
+    color: white;
+    text-decoration: none;
+    margin: 20px 10%;
+}
+
+.section-features>div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-features h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-features h2::after {
+    content: " ";
+    height: 5px;
+    width: 100px;
+    background-color: blue;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.section-features h3 {
+    text-transform: uppercase;
+}
+
+.section-features ion-icon {
+    font-size: 40px;
+    color: blue
+}
+
+.section-features long-copy {
+    line-height: 1.5rem;
+}
+
+.section-photos .image-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.section-photos .image-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.section-photos .photos {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.section-photos img {
+    opacity: 0.7;
+    width: 100%;
+    height: 300px;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-photos img:hover {
+    opacity: 1;
+    width: 100%;
+    height: 300px;
+    transform: scale(1.15);
+}
+
+.section-photos .image-showcase li div {
+    background-color: blue;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.section-photos .image-showcase li br {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        background-color: white;
+        color: #555;
+        font-family: 'Lato', 'Arial', 'sans-serif';
+        font-weight: 300;
+        text-rendering: optimizeLegibility;
+        font-size: 20px;
+    }
+
+    header {
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(img/img-hero-header2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 20px;
+        padding-right: 60px;
+    }
+    
+    header .logo {
+        width: 100px;
+        margin-left: 40px;
+        transform: border 0.8s;
+        border: solid 5px transparent;
+    }
+    
+    header .logo:hover {
+        border: solid 5px red;
+    }
+    
+    header .main-nav {
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 30%;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    
+    header .main-nav li a:hover,
+    header .main-nav li a:active {
+        padding-bottom: 4px;
+        border-bottom: solid 2px red;
+        transition: border-botton 0.4s;
+    }
+    
+    header h1 {
+        margin: 0;
+        color: white;
+        text-transform: uppercase;
+        word-spacing: 15px;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-text-box {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        border: solid 2px red;
+        border-radius: 10px;
+        padding: 5px 25px;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited {
+        background-color: red;
+    }
+    
+    .btn-full:hover,
+    .btn-full:active {
+        background-color: rgb(251, 87, 46);
+    }
+    
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        color: red;
+    }
+    
+    .btn-ghost:hover,
+    .btn-ghost:active {
+        background-color: rgb(251, 87, 46);
+        color: white;
+    }
+    
+    .section-features {
+        color: black;
+        text-decoration: none;
+        margin: 20px 10%;
+    }
+    
+    .section-features>div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .section-features h2 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .section-features h2::after {
+        content: " ";
+        height: 5px;
+        width: 100px;
+        background-color: red;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    .section-features h3 {
+        text-transform: uppercase;
+    }
+    
+    .section-features ion-icon {
+        font-size: 40px;
+        color: red
+    }
+
+    .section-photos .image-showcase li div {
+        background-color: red;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+    }
+    
+
+    .section-photos .image-showcase li br {
+        background-color: red;
+    }
+}
